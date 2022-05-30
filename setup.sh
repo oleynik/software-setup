@@ -39,7 +39,7 @@ sh ./install-keepassxc.sh
 # OpenOffice 	| Configured | Installed | Confirmed
 # VLC 			| Configured | Installed | Confirmed
 # KeePassXC 	| Configured | Installed | Confirmed
-# Graphviz		| Configured | 
+# Graphviz		| Configured | Installed | Confirmed
 
 # Monosnap 		| NOT FOUND
 
