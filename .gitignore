@@ -1,0 +1,5 @@
+# JenBrains IntelliJ directory
+.idea
+
+# Custom file related to git
+git-token
