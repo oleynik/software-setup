@@ -12,3 +12,6 @@ sh ./install-jetbrain-toolbox.sh
 
 # Docker
 sh ./install-docker.sh
+
+# Graphviz
+sh ./install-graphviz.sh
