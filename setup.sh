@@ -27,8 +27,7 @@ sh ./install-funter.sh
 sh ./install-openoffice.sh
 sh ./install-vlc.sh
 sh ./install-keepassxc.sh
-
-
+sh ./install-evernote.sh
 
 # Need to configure
 # Steam 		| Configured | Installed | Confirmed

@@ -13,5 +13,6 @@ sh ./install-jetbrain-toolbox.sh
 # Docker
 sh ./install-docker.sh
 
-# Graphviz
+# Graphviz and PlantUML
 sh ./install-graphviz.sh
+sh ./install-plantuml.sh
