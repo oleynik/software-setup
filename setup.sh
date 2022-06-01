@@ -11,7 +11,6 @@ sh ./install-dev-tools.sh
 sh ./install-sublime-text.sh
 sh ./install-protonvpn.sh
 
-
 # Optional Set
 sh ./install-telegram.sh
 sh ./install-slack.sh
