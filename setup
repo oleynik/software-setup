@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Mandatory Set
+sh setup-mandatory
+
+# Recommended Set
+sh install-sdkman
+sh install-dev-tools
+
+sh setup-recommended
+
+# Optional Set
+sh setup-optional

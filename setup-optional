@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Optional Set
+echo "Start installation of Optional Set..."
 sh install-by-brew-cask telegram-desktop "Telegram"
 sh install-by-brew-cask slack "Slack"
 sh install-by-brew-cask zoom "Zoom"

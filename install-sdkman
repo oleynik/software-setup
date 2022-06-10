@@ -1,23 +1,17 @@
 #!/bin/bash
 
-COMMAND=$1
-COMMAND_NAME=${2:-$COMMAND}
+COMMAND_NAME=SDKMan
 echo "#################################################################################################################"
 echo "Check installation for $COMMAND_NAME"
-
-echo "[DEBUG] Command: $COMMAND"
-echo "[DEBUG] Command Name: $COMMAND_NAME"
-echo ""
-
-if test "$(brew list $COMMAND | wc -l)" -gt 0
-then
-  # The COMMAND is installed
+if sdk version > /dev/null; then
+  # SDKMAN is installed
   echo "$COMMAND_NAME is installed"
-  brew info $COMMAND
+  sdk version
 else
-  # The COMMAND is not installed
+  # SDKMAN is not installed
   echo "$COMMAND_NAME is not installed. Installing..."
-  brew install $COMMAND
+  curl -s "https://get.sdkman.io" | bash
+  source "/Users/infinity/.sdkman/bin/sdkman-init.sh"
 fi
 echo "#################################################################################################################"
 echo ""

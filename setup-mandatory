@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Mandatory Set
+echo "Start installation of Mandatory Set..."
+sh install-brew
+sh install-rosetta
