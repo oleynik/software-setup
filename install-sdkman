@@ -11,7 +11,7 @@ else
   # SDKMAN is not installed
   echo "$COMMAND_NAME is not installed. Installing..."
   curl -s "https://get.sdkman.io" | bash
-  source "/Users/infinity/.sdkman/bin/sdkman-init.sh"
+  source "$HOME/.sdkman/bin/sdkman-init.sh"
 fi
 echo "#################################################################################################################"
 echo ""
