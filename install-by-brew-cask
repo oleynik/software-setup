@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sh install-by-brew "--cask $1" ${2:-$1}

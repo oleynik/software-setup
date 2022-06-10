@@ -8,13 +8,13 @@ sdk install maven
 
 
 # JetBrains Toolkit
-sh ./install-jetbrain-toolbox.sh
+sh install-by-brew-cask jetbrains-toolbox "JetBrains Toolbox"
 
 # Docker
-sh ./install-docker.sh
-sh ./install-docker-compose.sh
-sh ./install-rancher.sh
+sh install-by-brew docker "Docker"
+sh install-by-brew docker-compose "Docker Compose"
+sh install-by-brew-cask rancher "Rancher"
 
 # Graphviz and PlantUML
-sh ./install-graphviz.sh
-sh ./install-plantuml.sh
+sh install-by-brew graphviz "Graphviz"
+sh install-by-brew plantuml "Plant UML"

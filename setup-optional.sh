@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Optional Set
+sh install-by-brew-cask telegram-desktop "Telegram"
+sh install-by-brew-cask slack "Slack"
+sh install-by-brew-cask zoom "Zoom"
+sh install-by-brew-cask openvpn-connect "OpenVPN Connect"
+sh install-by-brew-cask google-drive "Google Drive"
+sh install-by-brew-cask microsoft-remote-desktop "Microsoft Remote Desktop"
+sh install-by-brew-cask stats "Stats"
+sh install-by-brew-cask mounty "Mounty"
+sh install-by-brew-cask steam "Steam"
+sh install-by-brew-cask signal "Signal"
+sh install-by-brew-cask funter "Funter"
+sh install-by-brew-cask openoffice "OpenOffice"
+sh install-by-brew-cask vlc "VLC Media Player"
+sh install-by-brew-cask keepassxc "KeePassXC"
+sh install-by-brew-cask evernote "Evernote"

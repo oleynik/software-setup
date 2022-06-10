@@ -1,0 +1,21 @@
+#!/bin/bash
+
+COMMAND=$1
+COMMAND_NAME=${2:-$COMMAND}
+echo "Check installation for $COMMAND_NAME"
+
+echo "[DEBUG] Command: $COMMAND"
+echo "[DEBUG] Command Name: $COMMAND_NAME"
+echo ""
+
+if test "$(brew list $COMMAND | wc -l)" -gt 0
+then
+  # The COMMAND is installed
+  echo "$COMMAND_NAME is installed"
+  brew info $COMMAND
+else
+  # The COMMAND is not installed
+  echo "$COMMAND_NAME is not installed. Installing..."
+  brew install $COMMAND
+fi
+echo ""
