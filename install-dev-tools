@@ -3,10 +3,14 @@
 # Tools for Development
 
 # Java Development Toolkit – JDK
+source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk install java 18.0.1.1-open
 
 # Maven
 sdk install maven
+
+# Gradle
+sdk install gradle
 
 # JetBrains Toolkit
 sh install-by-brew-cask jetbrains-toolbox "JetBrains Toolbox"
