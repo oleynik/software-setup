@@ -25,4 +25,4 @@ jobs:
 
       # Runs setup script
       - name: Run a one-line script
-        run: setup
+        run: ./setup
