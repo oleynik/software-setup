@@ -19,6 +19,9 @@ sh install-by-brew docker "Docker"
 sh install-by-brew docker-compose "Docker Compose"
 sh install-by-brew-cask rancher "Rancher"
 
+#Multipass
+sh install-by-brew-cask multipass "Multipass"
+
 # Graphviz and PlantUML
 sh install-by-brew graphviz "Graphviz"
 sh install-by-brew plantuml "Plant UML"
