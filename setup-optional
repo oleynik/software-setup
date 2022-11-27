@@ -9,7 +9,7 @@ sh install-by-brew-cask openvpn-connect "OpenVPN Connect"
 sh install-by-brew-cask google-drive "Google Drive"
 sh install-by-brew-cask microsoft-remote-desktop "Microsoft Remote Desktop"
 sh install-by-brew-cask stats "Stats"
-sh install-by-brew-cask mounty "Mounty"
+#sh install-by-brew-cask mounty "Mounty" # Is not working to MacOS 13 Ventura – https://mounty.app/
 sh install-by-brew-cask steam "Steam"
 sh install-by-brew-cask signal "Signal"
 sh install-by-brew-cask funter "Funter"
