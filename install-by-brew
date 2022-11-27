@@ -4,11 +4,6 @@ COMMAND=$1
 COMMAND_NAME=${2:-$COMMAND}
 echo "#################################################################################################################"
 echo "Check installation for $COMMAND_NAME"
-
-echo "[DEBUG] Command: $COMMAND"
-echo "[DEBUG] Command Name: $COMMAND_NAME"
-echo ""
-
 if test "$(brew list $COMMAND | wc -l)" -gt 0
 then
   # The COMMAND is installed
