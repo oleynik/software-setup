@@ -32,3 +32,8 @@ Installation of Some Tools for development done by Using [SDKMAN](https://sdkman
 The entry point is `setup` script. To run installation need to run `setup` script and provide 
 superuser permission. Before running please make sure that script is executable.
 To make it executable next command should be run: `chmod u+x setup`.
+
+## Tools
+This project has a set of additional Tools that are located in the [tools](tools) directory.
+
+For more details read [documentation](tools/README.md).
