@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Optional Set
 echo "Start installation of Optional Set..."

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Installation of Rosetta 2
 echo "Installation of Rosetta 2..."

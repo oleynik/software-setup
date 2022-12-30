@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Mandatory Set
 echo "Start installation of Mandatory Set..."

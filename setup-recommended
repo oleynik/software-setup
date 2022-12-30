@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Recommended Set
 echo "Start installation of Recommended Set..."
