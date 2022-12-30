@@ -1,0 +1,64 @@
+#!/usr/bin/env bash
+
+print_help() {
+    echo "      Create Offline Repository"
+    echo "  Tool for creation repository for specified project in offline storage"
+    echo "and adding this created repo as remote with name 'offline'."
+    echo "Offline Storage path is hardcoded to: /Volumes/infinity/work/git-repos"
+    echo ""
+    echo "Synopsis:"
+    echo " – create-offline-repo [project_path]"
+    echo " – create-offline-repo --help"
+    echo ""
+    echo "Usage: "
+    echo " – create-offline-repo: create new offline repo for the project located in current directory"
+    echo " – create-offline-repo /some/path/to/the/project: create repo for the project located in the directory that specified in the first argument"
+    echo " – create-offline-repo --help: print this message and exit"
+}
+
+print_variables() {
+    echo "Variables:"
+    echo "  PROJECT_PATH: $PROJECT_PATH"
+    echo "  PROJECT_NAME: $PROJECT_NAME"
+    echo "  OFFLINE_STORAGE_PATH: $OFFLINE_STORAGE_PATH"
+}
+
+PROJECT_PATH=$(pwd)
+PROJECT_NAME=$(basename $PROJECT_PATH)
+OFFLINE_STORAGE_PATH=/Volumes/infinity/work/git-repos
+
+#0. Parse Input and Preparation of Variables
+# Run with "--help" argument
+if [ "$1" == "--help" ]
+then
+    print_help
+    exit
+fi
+
+# Run without argument
+if [ ! -z "$1" ]
+then
+	PROJECT_PATH=$(readlink -f "$1")
+    PROJECT_NAME=$(basename $PROJECT_PATH)
+fi
+print_variables
+#exit
+
+#1. Create new project dir for offline repo
+OFFLINE_PROJECT_PATH=$OFFLINE_STORAGE_PATH/$PROJECT_NAME
+mkdir -p $OFFLINE_PROJECT_PATH
+
+#2. Navigate inside dir
+cd $OFFLINE_PROJECT_PATH
+
+#3. Create new empty bare Git repo
+git --bare init
+
+#4. Navigate to project dir
+cd $PROJECT_PATH
+
+#5. Add remote offline repo
+git remote add offline file://$OFFLINE_PROJECT_PATH
+
+#6. Verify
+git remote -v | grep offline
