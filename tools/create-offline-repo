@@ -39,7 +39,7 @@ fi
 if [ ! -z "$1" ]
 then
 	PROJECT_PATH=$(readlink -f "$1")
-    PROJECT_NAME=$(basename $PROJECT_PATH)
+  PROJECT_NAME=$(basename $PROJECT_PATH)
 fi
 print_variables
 #exit
