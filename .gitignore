@@ -1,5 +1,10 @@
-# JenBrains IntelliJ directory
+# JetBrains directories
 .idea
+.fleet
+
+# MacOS
+.DS_Store
 
 # Custom file related to git
 git-token
+
