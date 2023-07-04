@@ -22,3 +22,6 @@ sh install-by-brew-cask rancher "Rancher"
 # Graphviz and PlantUML
 sh install-by-brew graphviz "Graphviz"
 sh install-by-brew plantuml "Plant UML"
+
+# Version Manager for Node.js
+sh install-by-brew nvm "Node Version Manager" # Config for the Fish: https://github.com/jorgebucaran/nvm.fish
